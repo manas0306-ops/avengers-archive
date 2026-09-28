@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Gamepad2, RotateCcw, Timer, Award, Sparkles } from 'lucide-react';
 import { CHARACTERS } from '@/data/characters';
 import { useSound } from '@/hooks/useSound';
@@ -15,6 +15,9 @@ interface MemoryCardItem {
   isMatched: boolean;
 }
 
+// Fixed 6-hero pool for 12-card match
+const HERO_POOL = CHARACTERS.slice(0, 6);
+
 export function MemoryGame() {
   const [cards, setCards] = useState<MemoryCardItem[]>([]);
   const [flippedIndices, setFlippedIndices] = useState<number[]>([]);
@@ -26,12 +29,9 @@ export function MemoryGame() {
 
   const { playHover, playConfirm, playVictory } = useSound();
 
-  // Pick 6 heroes to create 12 pairs
-  const heroPool = CHARACTERS.slice(0, 6);
-
-  const initializeGame = () => {
+  const initializeGame = useCallback(() => {
     const paired: MemoryCardItem[] = [];
-    heroPool.forEach((hero) => {
+    HERO_POOL.forEach((hero) => {
       // Add pair
       paired.push({
         uid: `${hero.id}-1`,
@@ -59,7 +59,7 @@ export function MemoryGame() {
     setMatches(0);
     setSeconds(0);
     setIsRunning(true);
-  };
+  }, []);
 
   useEffect(() => {
     initializeGame();
@@ -67,16 +67,16 @@ export function MemoryGame() {
       const stored = localStorage.getItem('avengers_memory_best');
       if (stored) setBestScore(Number(stored));
     }
-  }, []);
+  }, [initializeGame]);
 
   // Timer
   useEffect(() => {
     let interval: NodeJS.Timeout;
-    if (isRunning && matches < heroPool.length) {
+    if (isRunning && matches < HERO_POOL.length) {
       interval = setInterval(() => setSeconds((s) => s + 1), 1000);
     }
     return () => clearInterval(interval);
-  }, [isRunning, matches, heroPool.length]);
+  }, [isRunning, matches, HERO_POOL.length]);
 
   const handleCardClick = (index: number) => {
     if (!isRunning || cards[index].isFlipped || cards[index].isMatched) return;
@@ -104,7 +104,7 @@ export function MemoryGame() {
           setFlippedIndices([]);
           setMatches((prev) => {
             const nextMatches = prev + 1;
-            if (nextMatches === heroPool.length) {
+            if (nextMatches === HERO_POOL.length) {
               // Game Won!
               setIsRunning(false);
               confetti({
@@ -133,7 +133,7 @@ export function MemoryGame() {
     }
   };
 
-  const isWon = matches === heroPool.length;
+  const isWon = matches === HERO_POOL.length;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-24">
@@ -162,7 +162,7 @@ export function MemoryGame() {
             MOVES: <strong className="text-white">{moves}</strong>
           </div>
           <div>
-            PAIRS: <strong className="text-marvel-gold">{matches}</strong> / {heroPool.length}
+            PAIRS: <strong className="text-marvel-gold">{matches}</strong> / {HERO_POOL.length}
           </div>
         </div>
 
