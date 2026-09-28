@@ -64,7 +64,7 @@ export function HeroArchiveCarousel({
       setCurrentIndex(targetIndex);
       playConfirm();
       const heroId = characters[targetIndex].id;
-      window.history.replaceState(null, '', `/heroes?id=${heroId}`);
+      window.history.replaceState(null, '', `?id=${heroId}`);
     },
     [total, characters, playConfirm]
   );

@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
+  basePath: isGithubPages ? '/avengers-archive' : '',
+  assetPrefix: isGithubPages ? '/avengers-archive/' : '',
   images: {
-    unoptimized: true, // Guarantees all curated CDN images load instantly without external proxy blockers
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'upload.wikimedia.org' },
