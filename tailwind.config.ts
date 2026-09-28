@@ -10,6 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        heroPrimary: 'var(--primary)',
+        heroSecondary: 'var(--secondary)',
+        heroBg: 'var(--bg)',
+        heroGlow: 'var(--glow)',
+        heroText: 'var(--text)',
         archive: {
           darkest: '#050608',
           darker: '#0a0c10',
@@ -29,9 +34,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        cinematic: ['var(--font-cinematic)', 'Cinzel', 'Trajan Pro', 'Georgia', 'serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        display: ['Anton', 'var(--font-display)', 'Bebas Neue', 'sans-serif'],
+        sans: ['Inter', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        cinematic: ['Cinzel', 'var(--font-cinematic)', 'Trajan Pro', 'Georgia', 'serif'],
+        mono: ['Space Mono', 'var(--font-mono)', 'monospace'],
       },
       backgroundImage: {
         'radial-gradient': 'radial-gradient(circle at 50% 50%, var(--tw-gradient-stops))',

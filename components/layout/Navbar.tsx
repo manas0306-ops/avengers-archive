@@ -41,14 +41,14 @@ export function Navbar({ onOpenSearch, onOpenJarvis }: NavbarProps) {
   const { favorites } = useFavorites();
 
   const navLinks = [
-    { label: 'HOME', href: '/', icon: Shield },
-    { label: 'HEROES', href: '/heroes', icon: Users },
+    { label: 'ARCHIVE', href: '/', icon: Shield },
     { label: 'TIMELINE', href: '/timeline', icon: Clock },
     { label: 'MOVIES', href: '/movies', icon: Film },
     { label: 'GALLERY', href: '/gallery', icon: ImageIcon },
     { label: 'WALLPAPERS', href: '/wallpapers', icon: Sparkles },
-    { label: 'MISSIONS', href: '/squad', icon: Compass },
+    { label: 'SQUAD', href: '/squad', icon: Compass },
     { label: 'TRIVIA', href: '/trivia', icon: HelpCircle },
+    { label: 'GAMES', href: '/games', icon: Sparkles },
   ];
 
   return (

@@ -42,3 +42,17 @@ export function hashString(str: string): string {
   }
   return Math.abs(hash).toString(16).padStart(8, '0');
 }
+
+export function withBase(path: string): string {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path;
+  }
+  const basePath = process.env.NODE_ENV === 'production' ? '/avengers-archive' : '';
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  if (cleanPath.startsWith(basePath) && basePath !== '') {
+    return cleanPath;
+  }
+  return `${basePath}${cleanPath}`;
+}
+

@@ -1,22 +1,20 @@
-'use client';
+import heroesData from '@/data/heroes.json';
+import { Hero } from '@/types/hero';
+import { ChapterStack } from '@/components/heroes/ChapterStack';
 
-import { useState } from 'react';
-import { HeroSection } from '@/components/home/HeroSection';
-import { DailyAvenger } from '@/components/home/DailyAvenger';
-import { ArchiveDiscoveryProgress } from '@/components/home/ArchiveDiscoveryProgress';
-import { QuickSections } from '@/components/home/QuickSections';
-import { JarvisModal } from '@/components/layout/JarvisModal';
+export const metadata = {
+  title: "Avengers Archive — Earth's Mightiest Heroes",
+  description:
+    "Earth's Mightiest Heroes — Their Stories. Their Battles. Their Legacy. An interactive, scroll-driven cinematic archive of the Marvel Cinematic Universe.",
+};
 
 export default function HomePage() {
-  const [isJarvisOpen, setIsJarvisOpen] = useState(false);
+  const heroes = heroesData as unknown as Hero[];
 
   return (
-    <div className="relative min-h-screen">
-      <HeroSection onOpenJarvis={() => setIsJarvisOpen(true)} />
-      <DailyAvenger />
-      <ArchiveDiscoveryProgress />
-      <QuickSections />
-      <JarvisModal isOpen={isJarvisOpen} onClose={() => setIsJarvisOpen(false)} />
+    <div className="relative min-h-screen bg-transparent">
+      {/* Scroll-Driven One-Hero-At-A-Time Experience Stack */}
+      <ChapterStack heroes={heroes} />
     </div>
   );
 }

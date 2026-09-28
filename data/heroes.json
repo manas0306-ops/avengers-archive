@@ -1,0 +1,1213 @@
+[
+  {
+    "slug": "iron-man",
+    "tier": 1,
+    "alias": "IRON MAN",
+    "realName": "Anthony Edward Stark — Tony Stark",
+    "actor": "Robert Downey Jr.",
+    "status": "DECEASED",
+    "born": {
+      "date": "May 29, 1970",
+      "place": "Manhattan, New York City",
+      "parents": "Son of Howard Stark and Maria Stark"
+    },
+    "story": [
+      "Born May 29, 1970, in Manhattan, Anthony Edward Stark was the brilliant son of industrialist Howard Stark and Maria Stark, inheriting Stark Industries at age twenty-one.",
+      "Ambushed in Afghanistan by the Ten Rings, Stark suffered shrapnel near his heart, constructed the miniature Arc Reactor with Ho Yinsen, forged the Mark I armor, and announced his superhero identity to the world.",
+      "Stark co-founded the Avengers, fought Loki and Ultron, catalyzed the Sokovia Accords, guided Peter Parker, and ultimately sacrificed his life utilizing the six Infinity Stones to vanquish Thanos."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "Iron Man",
+      "year": 2008
+    },
+    "appearancesCount": 10,
+    "theme": {
+      "primary": "#C8102E",
+      "secondary": "#F5B301",
+      "bg": "#0d0608",
+      "glow": "rgba(200, 16, 46, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/iron-man/face-unmasked.webp",
+      "masked": "/images/iron-man/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/iron-man/pose-tl.webp",
+      "t": "/images/iron-man/pose-t.webp",
+      "tr": "/images/iron-man/pose-tr.webp",
+      "l": "/images/iron-man/pose-l.webp",
+      "c": "/images/iron-man/pose-c.webp",
+      "r": "/images/iron-man/pose-r.webp",
+      "bl": "/images/iron-man/pose-bl.webp",
+      "b": "/images/iron-man/pose-b.webp",
+      "br": "/images/iron-man/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "Mark I",
+        "image": "/images/iron-man/suit-01.webp",
+        "firstAppearance": "Iron Man (2008)",
+        "description": "Crude scrap-metal powered armor built in Afghan captivity with Ho Yinsen."
+      },
+      {
+        "name": "Mark III",
+        "image": "/images/iron-man/suit-02.webp",
+        "firstAppearance": "Iron Man (2008)",
+        "description": "Streamlined hot-rod red and gold titanium alloy armor with onboard J.A.R.V.I.S. integration."
+      },
+      {
+        "name": "Mark VII",
+        "image": "/images/iron-man/suit-03.webp",
+        "firstAppearance": "The Avengers (2012)",
+        "description": "Rapid-deployment pod armor equipped for the Battle of New York and wormhole traversal."
+      },
+      {
+        "name": "Mark L (50)",
+        "image": "/images/iron-man/suit-04.webp",
+        "firstAppearance": "Avengers: Infinity War (2018)",
+        "description": "Direct nanotech crystallization armor housing energy blades, shields, and repulsor wings."
+      },
+      {
+        "name": "Mark LXXXV (85)",
+        "image": "/images/iron-man/suit-05.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Peak nanotech armor channeled with F.R.I.D.A.Y. capable of channeling all six Infinity Stones."
+      }
+    ],
+    "suitsSources": [
+      "Marvel Studios Visual Dictionary",
+      "Iron Man: The Art of Iron Man (Marvel Comics)",
+      "Marvel Cinematic Universe Guidebook: The Avengers Initiative"
+    ],
+    "timeline": [
+      {
+        "year": 2008,
+        "inUniverse": "Early 2008",
+        "title": "Escape from Gulmira & Origin",
+        "event": "Tony Stark escapes Afghan captivity, builds the Mark II/III, and announces his alter-ego."
+      },
+      {
+        "year": 2010,
+        "inUniverse": "May 2010",
+        "title": "Stark Expo & New Element",
+        "event": "Stark synthesizes a new element to cure palladium poisoning and defeats Ivan Vanko."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "Battle of New York",
+        "event": "Stark carries a nuclear warhead into the Chitauri wormhole, saving Manhattan."
+      },
+      {
+        "year": 2015,
+        "inUniverse": "Summer 2015",
+        "title": "Age of Ultron & Sokovia",
+        "event": "Tony accidentally creates Ultron, reconciles with the Avengers, and lifts Sokovia."
+      },
+      {
+        "year": 2016,
+        "inUniverse": "Spring 2016",
+        "title": "Sokovia Accords & Civil War",
+        "event": "Stark champions international oversight, resulting in the fracture of the Avengers."
+      },
+      {
+        "year": 2018,
+        "inUniverse": "Spring 2018",
+        "title": "Battle of Titan",
+        "event": "Stark travels to Titan to confront Thanos, suffering grievous injury before the Snap."
+      },
+      {
+        "year": 2023,
+        "inUniverse": "October 2023",
+        "title": "The Time Heist & Ultimate Sacrifice",
+        "event": "Stark invents the Time GPS, wields the Nano Gauntlet, and snaps away Thanos's army."
+      }
+    ],
+    "comics": [
+      {
+        "title": "Tales of Suspense",
+        "issue": "39",
+        "coverDate": "March 1963",
+        "creators": "Stan Lee, Larry Lieber, Don Heck, Jack Kirby",
+        "why": "Historic first appearance and origin of Iron Man in his grey Mark I armor.",
+        "cover": "/images/iron-man/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Tales_of_Suspense_Vol_1_39",
+        "readUrl": "https://marvel.com/comics/issue/11280/tales_of_suspense_1959_39"
+      },
+      {
+        "title": "Iron Man",
+        "issue": "1",
+        "coverDate": "May 1968",
+        "creators": "Archie Goodwin, Gene Colan",
+        "why": "Debut of Tony Stark's iconic standalone comic book series.",
+        "cover": "/images/iron-man/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Iron_Man_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/9531/iron_man_1968_1"
+      },
+      {
+        "title": "Iron Man",
+        "issue": "128",
+        "coverDate": "November 1979",
+        "creators": "David Michelinie, Bob Layton, John Romita Jr.",
+        "why": "The landmark 'Demon in a Bottle' story exploring Stark's human vulnerabilities.",
+        "cover": "/images/iron-man/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Iron_Man_Vol_1_128",
+        "readUrl": "https://marvel.com/comics/issue/9406/iron_man_1968_128"
+      },
+      {
+        "title": "Iron Man",
+        "issue": "225",
+        "coverDate": "December 1987",
+        "creators": "David Michelinie, Bob Layton, Mark Bright",
+        "why": "Beginning of the legendary 'Armor Wars' arc safeguarding Stark technology.",
+        "cover": "/images/iron-man/comic-04.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Iron_Man_Vol_1_225",
+        "readUrl": "https://marvel.com/comics/issue/9510/iron_man_1968_225"
+      },
+      {
+        "title": "Iron Man",
+        "issue": "Vol 4 #1",
+        "coverDate": "January 2005",
+        "creators": "Warren Ellis, Adi Granov",
+        "why": "The revolutionary 'Extremis' run that visually and conceptually defined the MCU film.",
+        "cover": "/images/iron-man/comic-05.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Iron_Man_Vol_4_1",
+        "readUrl": "https://marvel.com/comics/issue/1484/iron_man_2004_1"
+      },
+      {
+        "title": "Civil War",
+        "issue": "1",
+        "coverDate": "July 2006",
+        "creators": "Mark Millar, Steve McNiven",
+        "why": "Core ideological confrontation between Tony Stark and Steve Rogers.",
+        "cover": "/images/iron-man/comic-06.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Civil_War_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/4216/civil_war_2006_1"
+      }
+    ],
+    "stats": {
+      "strength": 82,
+      "speed": 78,
+      "intellect": 98,
+      "durability": 84,
+      "energy": 88,
+      "combat": 76
+    },
+    "teamUps": ["captain-america", "thor", "hulk", "black-widow", "hawkeye"],
+    "audio": {
+      "ambient": "arc_reactor_pulse",
+      "sfx": "repulsor_blast"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Anthony_Stark_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Marvel Studios Iron Man Press Archive",
+      "face-masked.webp": "Marvel Studios Iron Man Key Art",
+      "suit-01.webp": "Stark Industries Armor Vault Manual",
+      "suit-05.webp": "Avengers Endgame Concept Vault"
+    }
+  },
+  {
+    "slug": "captain-america",
+    "tier": 1,
+    "alias": "CAPTAIN AMERICA",
+    "realName": "Steven Grant Rogers — Steve Rogers",
+    "actor": "Chris Evans",
+    "status": "RETIRED",
+    "born": {
+      "date": "July 4, 1918",
+      "place": "Brooklyn, New York City",
+      "parents": "Son of Joseph Rogers and Sarah Rogers"
+    },
+    "story": [
+      "Born July 4, 1918, in Brooklyn, Steven Grant Rogers was the frail, determined son of Irish immigrants Joseph and Sarah Rogers, enduring sickness and loss with unbreakable resolve.",
+      "Selected for Project Rebirth by Dr. Abraham Erskine, Steve was transformed by the Super-Soldier Serum into Captain America, leading the Howling Commandos against Red Skull before crashing into Arctic ice.",
+      "Awakened seventy years later, Rogers led the Avengers through New York and Sokovia, dismantled Hydra within S.H.I.E.L.D., wielded Mjolnir against Thanos, and chose a quiet lifetime with Peggy Carter."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "Captain America: The First Avenger",
+      "year": 2011
+    },
+    "appearancesCount": 11,
+    "theme": {
+      "primary": "#1E4FA3",
+      "secondary": "#C8102E",
+      "bg": "#050914",
+      "glow": "rgba(30, 79, 163, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/captain-america/face-unmasked.webp",
+      "masked": "/images/captain-america/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/captain-america/pose-tl.webp",
+      "t": "/images/captain-america/pose-t.webp",
+      "tr": "/images/captain-america/pose-tr.webp",
+      "l": "/images/captain-america/pose-l.webp",
+      "c": "/images/captain-america/pose-c.webp",
+      "r": "/images/captain-america/pose-r.webp",
+      "bl": "/images/captain-america/pose-bl.webp",
+      "b": "/images/captain-america/pose-b.webp",
+      "br": "/images/captain-america/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "USO Tour Suit",
+        "image": "/images/captain-america/suit-01.webp",
+        "firstAppearance": "The First Avenger (2011)",
+        "description": "Star-spangled stage suit worn during war-bond tours across the United States."
+      },
+      {
+        "name": "WWII Tactical Battle Uniform",
+        "image": "/images/captain-america/suit-02.webp",
+        "firstAppearance": "The First Avenger (2011)",
+        "description": "Howard Stark-engineered combat leather and carbon weave with round Vibranium shield."
+      },
+      {
+        "name": "Stealth Strike Suit",
+        "image": "/images/captain-america/suit-03.webp",
+        "firstAppearance": "The Winter Soldier (2014)",
+        "description": "S.H.I.E.L.D. tactical covert operative uniform in midnight blue with muted silver star."
+      },
+      {
+        "name": "Age of Ultron Avengers Uniform",
+        "image": "/images/captain-america/suit-04.webp",
+        "firstAppearance": "Avengers: Age of Ultron (2015)",
+        "description": "Magnetic-retrieval gauntlet harness designed by Tony Stark for dynamic shield throws."
+      },
+      {
+        "name": "Scale-Mail Final Battle Suit",
+        "image": "/images/captain-america/suit-05.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Classic comic-accurate segmented chainmail suit worn during the final battle against Thanos."
+      }
+    ],
+    "suitsSources": [
+      "Captain America: The Art of the Movie",
+      "Marvel Studios Character Dossiers",
+      "S.H.I.E.L.D. Historical Archive Manual"
+    ],
+    "timeline": [
+      {
+        "year": 1943,
+        "inUniverse": "June 1943",
+        "title": "Project Rebirth",
+        "event": "Steve Rogers receives Erskine's serum and defeats Hydra assassin Heinz Kruger."
+      },
+      {
+        "year": 1945,
+        "inUniverse": "March 1945",
+        "title": "Valkyrie Crash in the Arctic",
+        "event": "Rogers sacrifices himself by ditching the bomber into polar ice to save millions."
+      },
+      {
+        "year": 2011,
+        "inUniverse": "October 2011",
+        "title": "Discovery & Thawing",
+        "event": "S.H.I.E.L.D. locates the wreckage and revives Captain America in 21st-century Times Square."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "Leading the Avengers",
+        "event": "Rogers coordinates emergency street response and tactical containment in Manhattan."
+      },
+      {
+        "year": 2014,
+        "inUniverse": "Spring 2014",
+        "title": "Hydra Uprising",
+        "event": "Exposes Project Insight and confronts his brainwashed friend Bucky Barnes."
+      },
+      {
+        "year": 2023,
+        "inUniverse": "October 2023",
+        "title": "Worthy & The Shield Passed",
+        "event": "Wields Mjolnir, commands 'Avengers Assemble', and later passes the mantle to Sam Wilson."
+      }
+    ],
+    "comics": [
+      {
+        "title": "Captain America Comics",
+        "issue": "1",
+        "coverDate": "March 1941",
+        "creators": "Joe Simon, Jack Kirby",
+        "why": "Historic wartime debut punching Adolf Hitler on the cover.",
+        "cover": "/images/captain-america/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Captain_America_Comics_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/7849/captain_america_comics_1941_1"
+      },
+      {
+        "title": "The Avengers",
+        "issue": "4",
+        "coverDate": "March 1964",
+        "creators": "Stan Lee, Jack Kirby",
+        "why": "Silver Age revival discovering Captain America frozen in the Arctic ice block.",
+        "cover": "/images/captain-america/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Avengers_Vol_1_4",
+        "readUrl": "https://marvel.com/comics/issue/6951/the_avengers_1963_4"
+      },
+      {
+        "title": "Captain America",
+        "issue": "Vol 5 #1",
+        "coverDate": "January 2005",
+        "creators": "Ed Brubaker, Steve Epting",
+        "why": "Genesis of the Winter Soldier storyline that inspired the acclaimed MCU film.",
+        "cover": "/images/captain-america/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Captain_America_Vol_5_1",
+        "readUrl": "https://marvel.com/comics/issue/1534/captain_america_2004_1"
+      },
+      {
+        "title": "Captain America",
+        "issue": "Vol 5 #25",
+        "coverDate": "April 2007",
+        "creators": "Ed Brubaker, Steve Epting",
+        "why": "The emotional aftermath of Civil War and the tragic fall of Steve Rogers.",
+        "cover": "/images/captain-america/comic-04.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Captain_America_Vol_5_25",
+        "readUrl": "https://marvel.com/comics/issue/5770/captain_america_2004_25"
+      },
+      {
+        "title": "Captain America",
+        "issue": "117",
+        "coverDate": "September 1969",
+        "creators": "Stan Lee, Gene Colan",
+        "why": "First appearance of Sam Wilson as the Falcon and their legendary partnership.",
+        "cover": "/images/captain-america/comic-05.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Captain_America_Vol_1_117",
+        "readUrl": "https://marvel.com/comics/issue/7488/captain_america_1968_117"
+      },
+      {
+        "title": "Avengers: Under Siege",
+        "issue": "273",
+        "coverDate": "November 1986",
+        "creators": "Roger Stern, John Buscema",
+        "why": "Cap rallies shattered Avengers after the Masters of Evil destroy Avengers Mansion.",
+        "cover": "/images/captain-america/comic-06.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Avengers_Vol_1_273",
+        "readUrl": "https://marvel.com/comics/issue/7154/the_avengers_1963_273"
+      }
+    ],
+    "stats": {
+      "strength": 65,
+      "speed": 58,
+      "intellect": 84,
+      "durability": 68,
+      "energy": 25,
+      "combat": 98
+    },
+    "teamUps": ["iron-man", "thor", "black-widow", "hawkeye", "hulk"],
+    "audio": {
+      "ambient": "shield_ricochet",
+      "sfx": "vibranium_clang"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Steven_Rogers_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Marvel Studios Captain America Archive",
+      "face-masked.webp": "Marvel Studios First Avenger Press Pack",
+      "suit-03.webp": "Winter Soldier Stealth Suit Schematics"
+    }
+  },
+  {
+    "slug": "thor",
+    "tier": 1,
+    "alias": "THOR",
+    "realName": "Thor Odinson",
+    "actor": "Chris Hemsworth",
+    "status": "ACTIVE",
+    "born": {
+      "date": "964 A.D.",
+      "place": "Asgard, Realm of the Gods",
+      "parents": "Son of Odin Borson and Frigga"
+    },
+    "story": [
+      "Born over a millennium ago in the golden realm of Asgard, Thor Odinson is the mighty firstborn son of Allfather Odin and Queen Frigga, crowned God of Thunder.",
+      "Banished to Midgard stripped of divine power, Thor learned humility among mortals, reclaimed enchanted war-hammer Mjolnir, and embraced Earth as his protectorate alongside the nascent Avengers.",
+      "Surviving the destruction of Asgard, the loss of his brother Loki, and the trauma of the Snap, Thor forged Stormbreaker, aided the Multiversal defense, and currently journeys raising adopted daughter Love."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "Thor",
+      "year": 2011
+    },
+    "appearancesCount": 9,
+    "theme": {
+      "primary": "#3AA6FF",
+      "secondary": "#B8C4D6",
+      "bg": "#060d17",
+      "glow": "rgba(58, 166, 255, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/thor/face-unmasked.webp",
+      "masked": "/images/thor/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/thor/pose-tl.webp",
+      "t": "/images/thor/pose-t.webp",
+      "tr": "/images/thor/pose-tr.webp",
+      "l": "/images/thor/pose-l.webp",
+      "c": "/images/thor/pose-c.webp",
+      "r": "/images/thor/pose-r.webp",
+      "bl": "/images/thor/pose-bl.webp",
+      "b": "/images/thor/pose-b.webp",
+      "br": "/images/thor/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "Coronation Royal Armor",
+        "image": "/images/thor/suit-01.webp",
+        "firstAppearance": "Thor (2011)",
+        "description": "Ceremonial Asgardian plate armor with chainmail arms and crimson cape."
+      },
+      {
+        "name": "Battle of New York Armor",
+        "image": "/images/thor/suit-02.webp",
+        "firstAppearance": "The Avengers (2012)",
+        "description": "Heavy combat Asgardian battle gear with circular chest medallions."
+      },
+      {
+        "name": "Sakaar Gladiator Battle Gear",
+        "image": "/images/thor/suit-03.webp",
+        "firstAppearance": "Thor: Ragnarok (2017)",
+        "description": "One-sleeved combat leathers, red war-paint, and winged gladiator helm."
+      },
+      {
+        "name": "Stormbreaker Awakened Armor",
+        "image": "/images/thor/suit-04.webp",
+        "firstAppearance": "Avengers: Infinity War (2018)",
+        "description": "Dark forged Uru-weave battle attire channeled with lightning."
+      },
+      {
+        "name": "Golden Celestial Armor",
+        "image": "/images/thor/suit-05.webp",
+        "firstAppearance": "Thor: Love and Thunder (2022)",
+        "description": "Elaborate blue and gold enchanted Asgardian armor."
+      }
+    ],
+    "suitsSources": [
+      "Thor: The Art of Asgard",
+      "Marvel Studios Visual Dictionary"
+    ],
+    "timeline": [
+      {
+        "year": 2011,
+        "inUniverse": "May 2011",
+        "title": "Exile in New Mexico",
+        "event": "Odin banishes Thor to Earth; proves worthy to lift Mjolnir once more."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "Defending Midgard",
+        "event": "Returns to Earth to capture Loki and defeats the Chitauri in New York."
+      },
+      {
+        "year": 2017,
+        "inUniverse": "Late 2017",
+        "title": "Ragnarok of Asgard",
+        "event": "Discovers true godhood without Mjolnir and sacrifices Asgard to defeat Hela."
+      },
+      {
+        "year": 2018,
+        "inUniverse": "Spring 2018",
+        "title": "Forging Stormbreaker",
+        "event": "Withstands the full heat of a neutron star at Nidavellir to forge Stormbreaker."
+      },
+      {
+        "year": 2023,
+        "inUniverse": "October 2023",
+        "title": "Duel with the Mad Titan",
+        "event": "Dual-wields Mjolnir and Stormbreaker to push back Thanos."
+      }
+    ],
+    "comics": [
+      {
+        "title": "Journey into Mystery",
+        "issue": "83",
+        "coverDate": "August 1962",
+        "creators": "Stan Lee, Larry Lieber, Jack Kirby",
+        "why": "Historic first Marvel appearance of Thor discovering Mjolnir.",
+        "cover": "/images/thor/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Journey_into_Mystery_Vol_1_83",
+        "readUrl": "https://marvel.com/comics/issue/10243/journey_into_mystery_1952_83"
+      },
+      {
+        "title": "Thor",
+        "issue": "337",
+        "coverDate": "November 1983",
+        "creators": "Walt Simonson",
+        "why": "First appearance of Beta Ray Bill proving worthy of Mjolnir.",
+        "cover": "/images/thor/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Thor_Vol_1_337",
+        "readUrl": "https://marvel.com/comics/issue/11674/thor_1966_337"
+      },
+      {
+        "title": "Thor: God of Thunder",
+        "issue": "1",
+        "coverDate": "November 2012",
+        "creators": "Jason Aaron, Esad Ribic",
+        "why": "The iconic Gorr the God Butcher saga inspiring Love and Thunder.",
+        "cover": "/images/thor/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Thor:_God_of_Thunder_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/43510/thor_god_of_thunder_2012_1"
+      },
+      {
+        "title": "Thor",
+        "issue": "Vol 4 #1",
+        "coverDate": "October 2014",
+        "creators": "Jason Aaron, Russell Dauterman",
+        "why": "Jane Foster lifts Mjolnir to become the Mighty Thor.",
+        "cover": "/images/thor/comic-04.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Thor_Vol_4_1",
+        "readUrl": "https://marvel.com/comics/issue/50953/thor_2014_1"
+      },
+      {
+        "title": "Thor",
+        "issue": "380",
+        "coverDate": "June 1987",
+        "creators": "Walt Simonson",
+        "why": "Epic full-page splash battle between Thor and the Midgard Serpent Jormungand.",
+        "cover": "/images/thor/comic-05.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Thor_Vol_1_380",
+        "readUrl": "https://marvel.com/comics/issue/11721/thor_1966_380"
+      },
+      {
+        "title": "Avengers",
+        "issue": "1",
+        "coverDate": "September 1963",
+        "creators": "Stan Lee, Jack Kirby",
+        "why": "Thor unites with Iron Man, Hulk, Ant-Man, and Wasp to form the Avengers.",
+        "cover": "/images/thor/comic-06.webp",
+        "sourceUrl": "https://en.wikipedia.org/wiki/The_Avengers_(comic_book)",
+        "readUrl": "https://www.marvel.com/comics/issue/1099/avengers_1963_1"
+      }
+    ],
+    "stats": {
+      "strength": 98,
+      "speed": 82,
+      "intellect": 68,
+      "durability": 96,
+      "energy": 95,
+      "combat": 90
+    },
+    "teamUps": ["iron-man", "captain-america", "hulk", "black-widow", "hawkeye"],
+    "audio": {
+      "ambient": "mjolnir_hum",
+      "sfx": "thunderclap"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Thor_Odinson_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Marvel Studios Thor Imagery",
+      "face-masked.webp": "Marvel Studios Ragnarok Helmet Art"
+    }
+  },
+  {
+    "slug": "hulk",
+    "tier": 1,
+    "alias": "HULK",
+    "realName": "Robert Bruce Banner — Bruce Banner",
+    "actor": "Mark Ruffalo",
+    "status": "ACTIVE",
+    "born": {
+      "date": "December 18, 1969",
+      "place": "Dayton, Ohio",
+      "parents": "Son of Brian Banner and Rebecca Banner"
+    },
+    "story": [
+      "Born December 18, 1969, in Dayton, Ohio, Robert Bruce Banner was the introverted child of Brian and Rebecca Banner, growing into a renowned nuclear physicist and biochemist.",
+      "Attempting to recreate Erskine's Super-Soldier Serum using gamma radiation at Culver University, Banner absorbed a fatal dosage, creating a monstrous green alter-ego triggered by elevated heart rates.",
+      "Finding sanctuary among the Avengers, Banner conquered his monstrous rage by synthesizing his scientific intellect with Hulk's raw physiology, utilizing the Nano Gauntlet to reverse the Blip."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "The Incredible Hulk",
+      "year": 2008
+    },
+    "appearancesCount": 9,
+    "theme": {
+      "primary": "#4CAF50",
+      "secondary": "#6B3FA0",
+      "bg": "#071208",
+      "glow": "rgba(76, 175, 80, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/hulk/face-unmasked.webp",
+      "masked": "/images/hulk/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/hulk/pose-tl.webp",
+      "t": "/images/hulk/pose-t.webp",
+      "tr": "/images/hulk/pose-tr.webp",
+      "l": "/images/hulk/pose-l.webp",
+      "c": "/images/hulk/pose-c.webp",
+      "r": "/images/hulk/pose-r.webp",
+      "bl": "/images/hulk/pose-bl.webp",
+      "b": "/images/hulk/pose-b.webp",
+      "br": "/images/hulk/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "Torn Civilian Slacks",
+        "image": "/images/hulk/suit-01.webp",
+        "firstAppearance": "The Incredible Hulk (2008)",
+        "description": "Tattered elastic trousers worn during initial transformations."
+      },
+      {
+        "name": "Stark Stretch-Fabric Combat Trousers",
+        "image": "/images/hulk/suit-02.webp",
+        "firstAppearance": "Avengers: Age of Ultron (2015)",
+        "description": "Microfiber polymer pants engineered by Tony Stark."
+      },
+      {
+        "name": "Sakaar Champion Gladiator Armor",
+        "image": "/images/hulk/suit-03.webp",
+        "firstAppearance": "Thor: Ragnarok (2017)",
+        "description": "Roman-style gladiator shoulder pauldron, leather kilt, and war helm."
+      },
+      {
+        "name": "Smart Hulk Tactical Bodysuit",
+        "image": "/images/hulk/suit-04.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Sleek grey and purple compression suit designed for the combined Banner-Hulk persona."
+      },
+      {
+        "name": "Time Heist Quantum Suit",
+        "image": "/images/hulk/suit-05.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Advanced white, black, and red sub-atomic survival armor."
+      }
+    ],
+    "suitsSources": [
+      "The Incredible Hulk Production Archive",
+      "Avengers: Endgame Visual Guide"
+    ],
+    "timeline": [
+      {
+        "year": 2006,
+        "inUniverse": "April 2006",
+        "title": "Gamma Accident at Culver",
+        "event": "Bruce Banner absorbs lethal gamma rays and transforms into the Hulk."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "'I'm Always Angry'",
+        "event": "Joins the Avengers in Manhattan, taking down a Leviathan with a single punch."
+      },
+      {
+        "year": 2015,
+        "inUniverse": "Summer 2015",
+        "title": "Exile into the Stars",
+        "event": "Steers the Quinjet off the radar following Sokovia, drifting into space."
+      },
+      {
+        "year": 2017,
+        "inUniverse": "Late 2017",
+        "title": "Grandmaster's Champion",
+        "event": "Reigns supreme in the Contest of Champions on Sakaar before reuniting with Thor."
+      },
+      {
+        "year": 2023,
+        "inUniverse": "October 2023",
+        "title": "The Blip Reversal",
+        "event": "Equips the Nano Gauntlet, suffering severe arm burns to restore half of all life."
+      }
+    ],
+    "comics": [
+      {
+        "title": "The Incredible Hulk",
+        "issue": "1",
+        "coverDate": "May 1962",
+        "creators": "Stan Lee, Jack Kirby",
+        "why": "Historic first appearance of Bruce Banner and the original grey Hulk.",
+        "cover": "/images/hulk/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Incredible_Hulk_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/8777/the_incredible_hulk_1962_1"
+      },
+      {
+        "title": "The Incredible Hulk",
+        "issue": "181",
+        "coverDate": "November 1974",
+        "creators": "Len Wein, Herb Trimpe",
+        "why": "Legendary confrontation featuring the first full appearance of Wolverine.",
+        "cover": "/images/hulk/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Incredible_Hulk_Vol_1_181",
+        "readUrl": "https://marvel.com/comics/issue/8922/the_incredible_hulk_1968_181"
+      },
+      {
+        "title": "Incredible Hulk",
+        "issue": "377",
+        "coverDate": "January 1991",
+        "creators": "Peter David, Dale Keown",
+        "why": "Debut of the integrated 'Professor Hulk' persona inspiring Endgame's Smart Hulk.",
+        "cover": "/images/hulk/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Incredible_Hulk_Vol_1_377",
+        "readUrl": "https://marvel.com/comics/issue/9146/the_incredible_hulk_1968_377"
+      },
+      {
+        "title": "Incredible Hulk",
+        "issue": "Vol 2 #92",
+        "coverDate": "April 2006",
+        "creators": "Greg Pak, Carlo Pagulayan",
+        "why": "Launch of the iconic 'Planet Hulk' gladiator storyline.",
+        "cover": "/images/hulk/comic-04.webp",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Planet_Hulk",
+        "readUrl": "https://www.marvel.com/comics/issue/159/incredible_hulk_1999_92"
+      },
+      {
+        "title": "World War Hulk",
+        "issue": "1",
+        "coverDate": "August 2007",
+        "creators": "Greg Pak, John Romita Jr.",
+        "why": "Hulk returns to Earth seeking vengeance against the Illuminati.",
+        "cover": "/images/hulk/comic-05.webp",
+        "sourceUrl": "https://en.wikipedia.org/wiki/World_War_Hulk",
+        "readUrl": "https://www.marvel.com/comics/issue/15949/world_war_hulk_2007_1"
+      },
+      {
+        "title": "Immortal Hulk",
+        "issue": "1",
+        "coverDate": "June 2018",
+        "creators": "Al Ewing, Joe Bennett",
+        "why": "Critically acclaimed horror reinvention of the Hulk mythos.",
+        "cover": "/images/hulk/comic-06.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Immortal_Hulk_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/68616/immortal_hulk_2018_1"
+      }
+    ],
+    "stats": {
+      "strength": 100,
+      "speed": 62,
+      "intellect": 92,
+      "durability": 100,
+      "energy": 55,
+      "combat": 68
+    },
+    "teamUps": ["iron-man", "thor", "captain-america", "black-widow", "hawkeye"],
+    "audio": {
+      "ambient": "gamma_heartbeat",
+      "sfx": "hulk_roar"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Bruce_Banner_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Banner Laboratory Headshot",
+      "face-masked.webp": "Hulk Enraged Facial Portrait"
+    }
+  },
+  {
+    "slug": "black-widow",
+    "tier": 1,
+    "alias": "BLACK WIDOW",
+    "realName": "Natalia Alianovna Romanoff — Natasha Romanoff",
+    "actor": "Scarlett Johansson",
+    "status": "DECEASED",
+    "born": {
+      "date": "December 3, 1984",
+      "place": "Stalingrad, Soviet Union",
+      "parents": "Daughter of Ivan Romanoff"
+    },
+    "story": [
+      "Born December 3, 1984, in Stalingrad, Natalia Alianovna Romanoff was surrendered as an infant to the clandestine KGB Red Room program, subjected to psychological conditioning and sterilization.",
+      "Trained into the Red Room's deadliest assassin, Natasha was spared by Clint Barton and defected to S.H.I.E.L.D., using espionage, martial arts, and undercover tradecraft to expiate past crimes.",
+      "Romanoff became the emotional linchpin of the Avengers, exposed Hydra, dismantled General Dreykov's Red Room, and willingly sacrificed her life on Vormir so Clint Barton could claim the Soul Stone."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "Iron Man 2",
+      "year": 2010
+    },
+    "appearancesCount": 9,
+    "theme": {
+      "primary": "#D32F2F",
+      "secondary": "#111111",
+      "bg": "#100606",
+      "glow": "rgba(211, 47, 47, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/black-widow/face-unmasked.webp",
+      "masked": "/images/black-widow/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/black-widow/pose-tl.webp",
+      "t": "/images/black-widow/pose-t.webp",
+      "tr": "/images/black-widow/pose-tr.webp",
+      "l": "/images/black-widow/pose-l.webp",
+      "c": "/images/black-widow/pose-c.webp",
+      "r": "/images/black-widow/pose-r.webp",
+      "bl": "/images/black-widow/pose-bl.webp",
+      "b": "/images/black-widow/pose-b.webp",
+      "br": "/images/black-widow/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "Stark Industries Undercover Cat-suit",
+        "image": "/images/black-widow/suit-01.webp",
+        "firstAppearance": "Iron Man 2 (2010)",
+        "description": "Tactical black catsuit featuring utility belt and electro-shock gauntlets."
+      },
+      {
+        "name": "Battle of New York Uniform",
+        "image": "/images/black-widow/suit-02.webp",
+        "firstAppearance": "The Avengers (2012)",
+        "description": "Kevlar tactical jumpsuit equipped with dual thigh holsters and wrist stingers."
+      },
+      {
+        "name": "S.H.I.E.L.D. Stealth Catsuit",
+        "image": "/images/black-widow/suit-03.webp",
+        "firstAppearance": "Captain America: The Winter Soldier (2014)",
+        "description": "Streamlined matte-black operative uniform with reinforced knee and elbow armor."
+      },
+      {
+        "name": "Siberian Snow Camouflage Suit",
+        "image": "/images/black-widow/suit-04.webp",
+        "firstAppearance": "Black Widow (2021)",
+        "description": "Tactical Arctic white combat suit with dual baton holsters and combat boots."
+      },
+      {
+        "name": "Time Heist Quantum Uniform",
+        "image": "/images/black-widow/suit-05.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Final mission suit tailored with braided auburn hair and Vormir grapple harness."
+      }
+    ],
+    "suitsSources": [
+      "Black Widow: The Official Movie Special",
+      "Marvel Studios Wardrobe Archives"
+    ],
+    "timeline": [
+      {
+        "year": 1995,
+        "inUniverse": "Summer 1995",
+        "title": "Ohio Sleeper Cell",
+        "event": "Escapes Ohio with Alexei Shostakov, Melina Vostokoff, and young Yelena Belova."
+      },
+      {
+        "year": 2010,
+        "inUniverse": "May 2010",
+        "title": "Infiltration of Stark Industries",
+        "event": "Assigned by Nick Fury to assess Tony Stark under the alias Natalie Rushman."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "Interrogation & Battle of New York",
+        "event": "Extracts Loki's plan through psychological deception and closes the portal."
+      },
+      {
+        "year": 2014,
+        "inUniverse": "Spring 2014",
+        "title": "Dumping S.H.I.E.L.D. Secrets",
+        "event": "Testifies before Congress after uploading all S.H.I.E.L.D. and Hydra files to the internet."
+      },
+      {
+        "year": 2023,
+        "inUniverse": "October 2023",
+        "title": "The Cliff on Vormir",
+        "event": "Sacrifices her life to grant Clint Barton the Soul Stone, fulfilling the Time Heist."
+      }
+    ],
+    "comics": [
+      {
+        "title": "Tales of Suspense",
+        "issue": "52",
+        "coverDate": "April 1964",
+        "creators": "Stan Lee, Don Rico, Don Heck",
+        "why": "First appearance of Russian femme fatale spy Natasha Romanoff.",
+        "cover": "/images/black-widow/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Tales_of_Suspense_Vol_1_52",
+        "readUrl": "https://marvel.com/comics/issue/11293/tales_of_suspense_1959_52"
+      },
+      {
+        "title": "The Amazing Spider-Man",
+        "issue": "86",
+        "coverDate": "July 1970",
+        "creators": "Stan Lee, John Romita Sr.",
+        "why": "Debut of Natasha's iconic black skintight catsuit and wrist stingers.",
+        "cover": "/images/black-widow/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Amazing_Spider-Man_Vol_1_86",
+        "readUrl": "https://marvel.com/comics/issue/6912/the_amazing_spider-man_1963_86"
+      },
+      {
+        "title": "Black Widow",
+        "issue": "Vol 1 #1",
+        "coverDate": "June 1999",
+        "creators": "Devin Grayson, J.G. Jones",
+        "why": "Debut of rival Red Room graduate Yelena Belova.",
+        "cover": "/images/black-widow/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Black_Widow_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/15981/black_widow_1999_1"
+      },
+      {
+        "title": "Black Widow: Deadly Origin",
+        "issue": "1",
+        "coverDate": "January 2010",
+        "creators": "Paul Cornell, Tom Raney, John Paul Leon",
+        "why": "Definitive exploration of Natasha's Cold War upbringing and Ivan Somodorov.",
+        "cover": "/images/black-widow/comic-04.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Black_Widow:_Deadly_Origin_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/28929/black_widow_deadly_origin_2009_1"
+      },
+      {
+        "title": "Black Widow",
+        "issue": "Vol 5 #1",
+        "coverDate": "March 2014",
+        "creators": "Nathan Edmondson, Phil Noto",
+        "why": "Acclaimed espionage run confronting Romanoff's ledger of moral debts.",
+        "cover": "/images/black-widow/comic-05.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Black_Widow_Vol_5_1",
+        "readUrl": "https://marvel.com/comics/issue/48622/black_widow_2014_1"
+      },
+      {
+        "title": "Secret Avengers",
+        "issue": "1",
+        "coverDate": "July 2010",
+        "creators": "Ed Brubaker, Mike Deodato Jr.",
+        "why": "Natasha coordinates high-stakes black-ops alongside Steve Rogers.",
+        "cover": "/images/black-widow/comic-06.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Secret_Avengers_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/30491/secret_avengers_2010_1"
+      }
+    ],
+    "stats": {
+      "strength": 38,
+      "speed": 46,
+      "intellect": 82,
+      "durability": 42,
+      "energy": 28,
+      "combat": 95
+    },
+    "teamUps": ["hawkeye", "captain-america", "iron-man", "hulk", "thor"],
+    "audio": {
+      "ambient": "taser_charge",
+      "sfx": "widow_stinger"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Natalia_Romanoff_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Marvel Studios Natasha Romanoff Portrait",
+      "face-masked.webp": "Red Room Tactical Mask Art"
+    }
+  },
+  {
+    "slug": "hawkeye",
+    "tier": 1,
+    "alias": "HAWKEYE",
+    "realName": "Clinton Francis Barton — Clint Barton",
+    "actor": "Jeremy Renner",
+    "status": "RETIRED",
+    "born": {
+      "date": "June 18, 1971",
+      "place": "Waverly, Iowa",
+      "parents": "Son of Harold Barton and Edith Barton"
+    },
+    "story": [
+      "Born June 18, 1971, in Waverly, Iowa, Clinton Francis Barton was raised alongside brother Barney, honing extraordinary kinetic instincts and world-class archery through relentless personal discipline.",
+      "Recruited as S.H.I.E.L.D.'s premier marksman, Barton formed an indelible partnership with Natasha Romanoff before becoming a founding member of the Avengers during the Chitauri invasion of Manhattan.",
+      "Driven to vigilante vengeance as Ronin following his family's dusting, Barton fought in the Time Heist, defeated Kingpin's syndicate in New York, and mentored Kate Bishop as Hawkeye's successor."
+    ],
+    "spoilers": [2],
+    "firstAppearance": {
+      "title": "Thor",
+      "year": 2011
+    },
+    "appearancesCount": 7,
+    "theme": {
+      "primary": "#6A4C93",
+      "secondary": "#1A1A1A",
+      "bg": "#0d0914",
+      "glow": "rgba(106, 76, 147, 0.4)",
+      "text": "#E8EAF0"
+    },
+    "face": {
+      "unmasked": "/images/hawkeye/face-unmasked.webp",
+      "masked": "/images/hawkeye/face-masked.webp",
+      "hoverMode": "spot"
+    },
+    "poses": {
+      "tl": "/images/hawkeye/pose-tl.webp",
+      "t": "/images/hawkeye/pose-t.webp",
+      "tr": "/images/hawkeye/pose-tr.webp",
+      "l": "/images/hawkeye/pose-l.webp",
+      "c": "/images/hawkeye/pose-c.webp",
+      "r": "/images/hawkeye/pose-r.webp",
+      "bl": "/images/hawkeye/pose-bl.webp",
+      "b": "/images/hawkeye/pose-b.webp",
+      "br": "/images/hawkeye/pose-br.webp"
+    },
+    "suits": [
+      {
+        "name": "S.H.I.E.L.D. Perimeter Sniper Attire",
+        "image": "/images/hawkeye/suit-01.webp",
+        "firstAppearance": "Thor (2011)",
+        "description": "Tactical black crane harness with mechanical compound bow."
+      },
+      {
+        "name": "Battle of New York Quiver Suit",
+        "image": "/images/hawkeye/suit-02.webp",
+        "firstAppearance": "The Avengers (2012)",
+        "description": "Sleeveless burgundy and black tactical vest with motorized rotary quiver."
+      },
+      {
+        "name": "Civil War Armored Archer Vest",
+        "image": "/images/hawkeye/suit-03.webp",
+        "firstAppearance": "Captain America: Civil War (2016)",
+        "description": "Single-sleeved leather archer uniform with reinforced forearm bracer."
+      },
+      {
+        "name": "Ronin Vigilante Armor",
+        "image": "/images/hawkeye/suit-04.webp",
+        "firstAppearance": "Avengers: Endgame (2019)",
+        "description": "Gold-trimmed hooded battle vest, face cowl, and dual katana scabbards."
+      },
+      {
+        "name": "Kate Bishop Partnership Purple Suit",
+        "image": "/images/hawkeye/suit-05.webp",
+        "firstAppearance": "Hawkeye (2021)",
+        "description": "Classic comic-inspired purple chevron tactical uniform."
+      }
+    ],
+    "suitsSources": [
+      "Hawkeye: The Art of the Series",
+      "Avengers: Endgame Visual Dictionary"
+    ],
+    "timeline": [
+      {
+        "year": 2011,
+        "inUniverse": "May 2011",
+        "title": "Mjolnir Crater Security",
+        "event": "Draws bead on Thor attempting to reclaim Mjolnir in New Mexico."
+      },
+      {
+        "year": 2012,
+        "inUniverse": "May 2012",
+        "title": "Battle of New York",
+        "event": "Breaks Loki's mind control and executes tactical high-ground sniper command."
+      },
+      {
+        "year": 2015,
+        "inUniverse": "Summer 2015",
+        "title": "The Safehouse Farm",
+        "event": "Shelters the wounded Avengers and mentors Wanda Maximoff during Sokovia's climax."
+      },
+      {
+        "year": 2018,
+        "inUniverse": "Spring 2018",
+        "title": "The Loss of Family",
+        "event": "Witnesses his entire family turn to dust during the Snap, becoming Ronin."
+      },
+      {
+        "year": 2024,
+        "inUniverse": "December 2024",
+        "title": "Passing the Bow",
+        "event": "Confronts Echo, unmasks Kingpin, and hands the mantle to Kate Bishop."
+      }
+    ],
+    "comics": [
+      {
+        "title": "Tales of Suspense",
+        "issue": "57",
+        "coverDate": "September 1964",
+        "creators": "Stan Lee, Don Heck",
+        "why": "Historic debut of Clint Barton as an adversary of Iron Man.",
+        "cover": "/images/hawkeye/comic-01.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Tales_of_Suspense_Vol_1_57",
+        "readUrl": "https://marvel.com/comics/issue/11298/tales_of_suspense_1959_57"
+      },
+      {
+        "title": "The Avengers",
+        "issue": "16",
+        "coverDate": "May 1965",
+        "creators": "Stan Lee, Jack Kirby",
+        "why": "Cap's Kooky Quartet: Hawkeye joins the Avengers alongside Scarlet Witch and Quicksilver.",
+        "cover": "/images/hawkeye/comic-02.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Avengers_Vol_1_16",
+        "readUrl": "https://marvel.com/comics/issue/6964/the_avengers_1963_16"
+      },
+      {
+        "title": "Hawkeye",
+        "issue": "Vol 1 #1",
+        "coverDate": "September 1983",
+        "creators": "Mark Gruenwald",
+        "why": "Clint's first solo miniseries and origin story alongside Mockingbird.",
+        "cover": "/images/hawkeye/comic-03.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/Hawkeye_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/8568/hawkeye_1983_1"
+      },
+      {
+        "title": "Hawkeye",
+        "issue": "Vol 4 #1",
+        "coverDate": "August 2012",
+        "creators": "Matt Fraction, David Aja",
+        "why": "Eisner-winning masterpiece defining Clint's everyday life, Lucky the Pizza Dog, and Kate Bishop.",
+        "cover": "/images/hawkeye/comic-04.webp",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Hawkeye_(comic_book)",
+        "readUrl": "https://www.marvel.com/comics/issue/42758/hawkeye_2012_1"
+      },
+      {
+        "title": "West Coast Avengers",
+        "issue": "1",
+        "coverDate": "September 1984",
+        "creators": "Roger Stern, Bob Hall",
+        "why": "Hawkeye branches out to found and chair the West Coast Avengers in Los Angeles.",
+        "cover": "/images/hawkeye/comic-05.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/West_Coast_Avengers_Vol_1_1",
+        "readUrl": "https://marvel.com/comics/issue/12079/west_coast_avengers_1984_1"
+      },
+      {
+        "title": "New Avengers",
+        "issue": "27",
+        "coverDate": "April 2007",
+        "creators": "Brian Michael Bendis, Leinil Francis Yu",
+        "why": "Debut of Clint Barton as the ruthless masked vigilante Ronin in Tokyo.",
+        "cover": "/images/hawkeye/comic-06.webp",
+        "sourceUrl": "https://marvel.fandom.com/wiki/New_Avengers_Vol_1_27",
+        "readUrl": "https://marvel.com/comics/issue/6011/new_avengers_2005_27"
+      }
+    ],
+    "stats": {
+      "strength": 36,
+      "speed": 44,
+      "intellect": 78,
+      "durability": 40,
+      "energy": 38,
+      "combat": 92
+    },
+    "teamUps": ["black-widow", "captain-america", "iron-man", "thor", "hulk"],
+    "audio": {
+      "ambient": "bowstring_tension",
+      "sfx": "arrow_impact"
+    },
+    "sources": [
+      "https://marvelstudios.com",
+      "https://marvel.fandom.com/wiki/Clinton_Barton_(Earth-199999)"
+    ],
+    "imageSources": {
+      "face-unmasked.webp": "Clint Barton Dossier Photography",
+      "face-masked.webp": "Ronin Vigilante Mask Art"
+    }
+  }
+]

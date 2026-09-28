@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +6,9 @@
 
 :root {
   --font-inter: 'Inter', system-ui, sans-serif;
-  --font-cinematic: 'Cinzel', 'Trajan Pro', Georgia, serif;
-  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Anton', 'Bebas Neue', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-cinematic: 'Cinzel', Georgia, serif;
 }
 
 /* Custom Cinematic Scrollbar */
@@ -21,19 +22,31 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(226, 54, 54, 0.4);
+  background: var(--primary, rgba(226, 54, 54, 0.4));
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(226, 54, 54, 0.8);
+  background: var(--primary, rgba(226, 54, 54, 0.8));
 }
 
-/* Base Body Styles */
+/* Dynamic Active Hero Theming on Body */
 body {
-  background-color: #050608;
-  color: #f4f4f5;
+  background-color: var(--bg, #060709);
+  color: var(--text, #E8EAF0);
+  transition: background-color 600ms cubic-bezier(0.16, 1, 0.3, 1),
+              color 600ms cubic-bezier(0.16, 1, 0.3, 1);
   overflow-x: hidden;
+}
+
+/* Scroll Snap Container (Proximity to chapter starts only) */
+html.scroll-snap-enabled {
+  scroll-snap-type: y proximity;
+}
+
+.hero-chapter {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 /* Glassmorphism Classes */
@@ -44,7 +57,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Hide scrollbar for clean carousels */
+/* Hide scrollbar for clean horizontal galleries */
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
@@ -62,5 +75,8 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  html.scroll-snap-enabled {
+    scroll-snap-type: none !important;
   }
 }

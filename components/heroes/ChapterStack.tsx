@@ -1,0 +1,181 @@
+'use client';
+
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Hero } from '@/types/hero';
+import { HeroChapter } from './HeroChapter';
+import { TransitionStrip } from './TransitionStrip';
+import { MiniIndex } from './MiniIndex';
+import { TopProgressBar } from '@/components/layout/TopProgressBar';
+import { Filter, Users } from 'lucide-react';
+
+interface ChapterStackProps {
+  heroes: Hero[];
+  initialSlug?: string;
+}
+
+export function ChapterStack({ heroes, initialSlug }: ChapterStackProps) {
+  const [activeTier, setActiveTier] = useState<number | 'ALL'>('ALL');
+  const [activeSlug, setActiveSlug] = useState<string>(heroes[0]?.slug || 'iron-man');
+  const [isSnapEnabled, setIsSnapEnabled] = useState(true);
+
+  // Filter heroes by tier
+  const filteredHeroes = useMemo(() => {
+    if (activeTier === 'ALL') return heroes;
+    return heroes.filter((h) => h.tier === activeTier);
+  }, [heroes, activeTier]);
+
+  const activeHero = useMemo(() => {
+    return heroes.find((h) => h.slug === activeSlug) || heroes[0];
+  }, [heroes, activeSlug]);
+
+  // Handle prefers-reduced-motion
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      setIsSnapEnabled(!mediaQuery.matches);
+      if (!mediaQuery.matches) {
+        document.documentElement.classList.add('scroll-snap-enabled');
+      } else {
+        document.documentElement.classList.remove('scroll-snap-enabled');
+      }
+
+      const handler = (e: MediaQueryListEvent) => {
+        setIsSnapEnabled(!e.matches);
+        if (!e.matches) {
+          document.documentElement.classList.add('scroll-snap-enabled');
+        } else {
+          document.documentElement.classList.remove('scroll-snap-enabled');
+        }
+      };
+
+      mediaQuery.addEventListener('change', handler);
+      return () => mediaQuery.removeEventListener('change', handler);
+    }
+  }, []);
+
+  // Update theme CSS variables, document title, and hash when active hero changes
+  useEffect(() => {
+    if (!activeHero) return;
+
+    // 1. Animate theme CSS variables on <body>
+    const body = document.body;
+    body.style.setProperty('--primary', activeHero.theme.primary);
+    body.style.setProperty('--secondary', activeHero.theme.secondary);
+    body.style.setProperty('--bg', activeHero.theme.bg);
+    body.style.setProperty('--glow', activeHero.theme.glow);
+    body.style.setProperty('--text', activeHero.theme.text);
+
+    // 2. Update document title
+    document.title = `${activeHero.alias} — Avengers Archive`;
+
+    // 3. Update URL hash via replaceState (no scroll jump)
+    if (window.location.hash !== `#${activeHero.slug}`) {
+      window.history.replaceState(null, '', `#${activeHero.slug}`);
+    }
+  }, [activeHero]);
+
+  // Deep-link initial scroll after mount
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '') || initialSlug;
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+          setActiveSlug(hash);
+        }, 350);
+      }
+    }
+  }, [initialSlug]);
+
+  // Active hero detection via IntersectionObserver (occupying >= 50% viewport)
+  useEffect(() => {
+    const chapters = document.querySelectorAll<HTMLElement>('.hero-chapter');
+    if (!chapters.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+            const slug = entry.target.getAttribute('data-slug');
+            if (slug && slug !== activeSlug) {
+              setActiveSlug(slug);
+            }
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: [0.35, 0.5, 0.75],
+      }
+    );
+
+    chapters.forEach((ch) => observer.observe(ch));
+    return () => observer.disconnect();
+  }, [filteredHeroes, activeSlug]);
+
+  const scrollToHero = (slug: string) => {
+    const el = document.getElementById(slug);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      setActiveSlug(slug);
+    }
+  };
+
+  return (
+    <div className="relative w-full overflow-hidden">
+      {/* Top Global Scroll Progress Bar */}
+      <TopProgressBar accentColor={activeHero?.theme.primary} />
+
+      {/* Filter Bar Bar Floating Top Left Sub-strip */}
+      <div className="fixed top-20 left-4 sm:left-8 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl bg-black/60 backdrop-blur-xl border border-white/10 shadow-xl">
+        <span className="px-2 text-zinc-400 font-mono text-[10px] uppercase flex items-center gap-1">
+          <Filter className="w-3 h-3 text-zinc-400" />
+          FILTER:
+        </span>
+        {(['ALL', 1, 2, 3] as const).map((tier) => (
+          <button
+            key={String(tier)}
+            onClick={() => setActiveTier(tier)}
+            className={`px-2.5 py-1 rounded-xl text-[11px] font-mono transition-all duration-200 ${
+              activeTier === tier
+                ? 'bg-white/20 text-white font-bold shadow-md'
+                : 'text-zinc-400 hover:text-white hover:bg-white/5'
+            }`}
+            style={{
+              borderColor: activeTier === tier ? activeHero?.theme.primary : undefined,
+              color: activeTier === tier ? activeHero?.theme.secondary : undefined,
+            }}
+          >
+            {tier === 'ALL' ? 'ALL' : `TIER ${tier}`}
+          </button>
+        ))}
+      </div>
+
+      {/* Sticky Mini-Index (Vertical Dots on Far Right Edge) */}
+      <MiniIndex
+        heroes={filteredHeroes}
+        activeSlug={activeSlug}
+        onSelectHero={scrollToHero}
+      />
+
+      {/* Stack of Hero Chapters with 40vh Transition Strips in between */}
+      <main className="w-full flex flex-col">
+        {filteredHeroes.map((hero, index) => {
+          const nextHero = filteredHeroes[index + 1];
+
+          return (
+            <React.Fragment key={hero.slug}>
+              {/* Hero Chapter (Blocks A, B, A2, C, D) */}
+              <HeroChapter hero={hero} onSelectTeamUp={scrollToHero} />
+
+              {/* 40vh Transition Strip to Next Hero */}
+              {nextHero && <TransitionStrip nextHero={nextHero} />}
+            </React.Fragment>
+          );
+        })}
+      </main>
+    </div>
+  );
+}
