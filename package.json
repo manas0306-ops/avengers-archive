@@ -12,7 +12,8 @@
     "verify:assets": "tsx scripts/verify-assets.ts",
     "verify:links": "tsx scripts/verify-links.ts",
     "check:alignment": "tsx scripts/check-alignment.ts",
-    "ingest:assets": "tsx scripts/ingest-assets.ts"
+    "ingest:assets": "tsx scripts/ingest-assets.ts",
+    "test:face-hover": "tsx scripts/test-face-hover.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.6",
