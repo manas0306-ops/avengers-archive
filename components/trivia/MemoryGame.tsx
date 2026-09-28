@@ -76,7 +76,7 @@ export function MemoryGame() {
       interval = setInterval(() => setSeconds((s) => s + 1), 1000);
     }
     return () => clearInterval(interval);
-  }, [isRunning, matches, HERO_POOL.length]);
+  }, [isRunning, matches]);
 
   const handleCardClick = (index: number) => {
     if (!isRunning || cards[index].isFlipped || cards[index].isMatched) return;
