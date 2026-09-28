@@ -7,6 +7,7 @@ import { FaceModule } from './FaceModule';
 import { IntelStrip } from './IntelStrip';
 import { SuitsGallery } from './SuitsGallery';
 import { HeroTimeline } from './HeroTimeline';
+import { ComicsSection } from './ComicsSection';
 
 interface HeroChapterProps {
   hero: Hero;
@@ -67,6 +68,11 @@ export function HeroChapter({ hero, onSelectTeamUp }: HeroChapterProps) {
       <section aria-label="Chronological Timeline Turning Points" className="my-12 sm:my-20 w-full">
         <HeroTimeline hero={hero} />
       </section>
+
+      {/* ========================================================================= */}
+      {/* BLOCK E: Canonical Comics Archive & In-Page Reader                         */}
+      {/* ========================================================================= */}
+      <ComicsSection hero={hero} />
     </article>
   );
 }

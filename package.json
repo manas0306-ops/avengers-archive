@@ -13,7 +13,8 @@
     "verify:links": "tsx scripts/verify-links.ts",
     "check:alignment": "tsx scripts/check-alignment.ts",
     "ingest:assets": "tsx scripts/ingest-assets.ts",
-    "test:face-hover": "tsx scripts/test-face-hover.ts"
+    "test:face-hover": "tsx scripts/test-face-hover.ts",
+    "test:comics": "tsx scripts/test-comics-section.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.6",
