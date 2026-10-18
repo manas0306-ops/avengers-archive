@@ -13,7 +13,7 @@ export function MiniIndex({ heroes, activeSlug, onSelectHero }: MiniIndexProps) 
   return (
     <aside
       aria-label="Hero index navigation"
-      className="fixed right-3 sm:right-6 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-3 p-2.5 rounded-full bg-black/40 border border-white/10 backdrop-blur-xl shadow-2xl"
+      className="fixed right-3 sm:right-6 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-2 p-2 rounded-full bg-black/60 border border-white/10 backdrop-blur-xl shadow-2xl max-h-[80vh] overflow-y-auto scrollbar-none"
     >
       {heroes.map((hero) => {
         const isActive = hero.slug === activeSlug;

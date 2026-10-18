@@ -184,6 +184,61 @@ CREATE TABLE IF NOT EXISTS public.trivia_attempts (
     timestamp TIMESTAMPTZ DEFAULT NOW()
 );
 
+-- 10. STARK ARMORS (MARK I - LXXXV)
+CREATE TABLE IF NOT EXISTS public.stark_armors (
+    id TEXT PRIMARY KEY,
+    mark_number INT NOT NULL UNIQUE,
+    designation TEXT NOT NULL,
+    name TEXT NOT NULL,
+    category TEXT NOT NULL CHECK (category IN ('PROTOTYPE', 'STANDARD', 'SPECIALIZED', 'HEAVY_DUTY', 'STEALTH', 'SPACE_EXPLORATION', 'MODULAR', 'NANOTECH', 'QUANTUM')),
+    status TEXT NOT NULL CHECK (status IN ('DESTROYED', 'ACTIVE', 'STORED', 'RETIRED', 'FALLEN')),
+    first_appearance TEXT NOT NULL,
+    first_appearance_year INT NOT NULL,
+    destruction_event TEXT,
+    construction_notes TEXT NOT NULL,
+    primary_color TEXT NOT NULL,
+    secondary_color TEXT NOT NULL,
+    capabilities JSONB NOT NULL DEFAULT '[]'::jsonb,
+    weapons_systems JSONB NOT NULL DEFAULT '[]'::jsonb,
+    propulsion JSONB NOT NULL DEFAULT '[]'::jsonb,
+    defensive_features JSONB NOT NULL DEFAULT '[]'::jsonb,
+    special_features JSONB NOT NULL DEFAULT '[]'::jsonb,
+    canon_status TEXT NOT NULL CHECK (canon_status IN ('CANONICAL', 'CANONICAL_INTERMEDIATE', 'UNCONFIRMED_SPEC', 'CONCEPT')),
+    editorial_unknown_fields JSONB NOT NULL DEFAULT '[]'::jsonb,
+    sources JSONB NOT NULL DEFAULT '[]'::jsonb,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 11. STARK INVENTIONS & TECHNOLOGIES
+CREATE TABLE IF NOT EXISTS public.stark_inventions (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    category TEXT NOT NULL CHECK (category IN ('POWER_GENERATION', 'ARTIFICIAL_INTELLIGENCE', 'DEFENSE_SECURITY', 'NANOTECHNOLOGY', 'QUANTUM_MECHANICS', 'TACTICAL_SUITS', 'AUTOMATION', 'HOLOGRAPHIC_INTERFACE')),
+    inventor TEXT NOT NULL,
+    co_inventors JSONB NOT NULL DEFAULT '[]'::jsonb,
+    first_appearance TEXT NOT NULL,
+    first_appearance_year INT NOT NULL,
+    purpose TEXT NOT NULL,
+    core_technology TEXT NOT NULL,
+    capabilities JSONB NOT NULL DEFAULT '[]'::jsonb,
+    limitations JSONB NOT NULL DEFAULT '[]'::jsonb,
+    status TEXT NOT NULL CHECK (status IN ('ACTIVE', 'DESTROYED', 'TRANSFERRED', 'DEPRECATED', 'RETIRED')),
+    related_characters JSONB NOT NULL DEFAULT '[]'::jsonb,
+    sources JSONB NOT NULL DEFAULT '[]'::jsonb,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 12. ADMIN AUDIT LOGS (Security & Compliance)
+CREATE TABLE IF NOT EXISTS public.admin_audit_logs (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    timestamp TIMESTAMPTZ DEFAULT NOW(),
+    action TEXT NOT NULL,
+    admin_name TEXT NOT NULL,
+    details TEXT NOT NULL,
+    ip_address TEXT,
+    user_agent TEXT
+);
+
 -- INDEXES FOR PERFORMANCE
 CREATE INDEX IF NOT EXISTS idx_characters_status ON public.characters(status);
 CREATE INDEX IF NOT EXISTS idx_characters_category ON public.characters(category);
@@ -192,6 +247,11 @@ CREATE INDEX IF NOT EXISTS idx_timeline_year ON public.timeline_events(year);
 CREATE INDEX IF NOT EXISTS idx_visitor_sessions_last_heartbeat ON public.visitor_sessions(last_heartbeat);
 CREATE INDEX IF NOT EXISTS idx_visitor_events_timestamp ON public.visitor_events(timestamp DESC);
 CREATE INDEX IF NOT EXISTS idx_favorites_session ON public.favorites(session_id);
+CREATE INDEX IF NOT EXISTS idx_stark_armors_mark_number ON public.stark_armors(mark_number);
+CREATE INDEX IF NOT EXISTS idx_stark_armors_category ON public.stark_armors(category);
+CREATE INDEX IF NOT EXISTS idx_stark_armors_status ON public.stark_armors(status);
+CREATE INDEX IF NOT EXISTS idx_stark_inventions_category ON public.stark_inventions(category);
+CREATE INDEX IF NOT EXISTS idx_admin_audit_logs_timestamp ON public.admin_audit_logs(timestamp DESC);
 
 -- ENABLE ROW LEVEL SECURITY
 ALTER TABLE public.characters ENABLE ROW LEVEL SECURITY;
@@ -204,6 +264,9 @@ ALTER TABLE public.favorites ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.saved_squads ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.trivia_questions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.trivia_attempts ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.stark_armors ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.stark_inventions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.admin_audit_logs ENABLE ROW LEVEL SECURITY;
 
 -- POLICIES: Public Read for Catalog, Auth/Admin for Analytics and Modifications
 CREATE POLICY "Public characters are viewable by everyone" ON public.characters FOR SELECT USING (true);
@@ -216,3 +279,7 @@ CREATE POLICY "Public visitor sessions can be updated" ON public.visitor_session
 CREATE POLICY "Public visitor events can be inserted" ON public.visitor_events FOR INSERT WITH CHECK (true);
 CREATE POLICY "Favorites are manage-able by session" ON public.favorites FOR ALL USING (true);
 CREATE POLICY "Saved squads can be viewed and inserted" ON public.saved_squads FOR ALL USING (true);
+CREATE POLICY "Public stark armors are viewable by everyone" ON public.stark_armors FOR SELECT USING (true);
+CREATE POLICY "Public stark inventions are viewable by everyone" ON public.stark_inventions FOR SELECT USING (true);
+CREATE POLICY "Admin audit logs viewable by admin" ON public.admin_audit_logs FOR SELECT USING (auth.role() = 'service_role');
+CREATE POLICY "Admin audit logs insertable by admin" ON public.admin_audit_logs FOR INSERT WITH CHECK (true);

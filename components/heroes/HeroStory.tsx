@@ -122,6 +122,27 @@ export function HeroStory({ hero }: HeroStoryProps) {
           );
         })}
       </div>
+
+      {/* Deep Dossier & Specialized Experience Gateway */}
+      <div className="flex flex-wrap items-center gap-3 mt-6 pt-4 border-t border-white/10 font-mono text-xs">
+        <a
+          href={`/heroes/${hero.slug}`}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold transition-all shadow-md hover:shadow-white/10"
+        >
+          <span>OPEN FULL DOSSIER (8 CHAPTERS & TELEMETRY)</span>
+          <span>→</span>
+        </a>
+
+        {hero.slug === 'iron-man' && (
+          <a
+            href="/heroes/iron-man"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/50 text-cyan-300 font-bold transition-all shadow-[0_0_20px_rgba(0,240,255,0.25)]"
+          >
+            <span>⚡ STARK WORKSHOP & 85 ARMORS</span>
+            <span>→</span>
+          </a>
+        )}
+      </div>
     </div>
   );
 }

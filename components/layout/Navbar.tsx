@@ -22,6 +22,7 @@ import {
   Menu,
   X,
   Sparkles,
+  Cpu,
 } from 'lucide-react';
 import { useSound } from '@/hooks/useSound';
 import { useSpoilerMode } from '@/hooks/useSpoilerMode';
@@ -42,6 +43,8 @@ export function Navbar({ onOpenSearch, onOpenJarvis }: NavbarProps) {
 
   const navLinks = [
     { label: 'ARCHIVE', href: '/', icon: Shield },
+    { label: 'HEROES', href: '/heroes', icon: Users },
+    { label: 'STARK LAB', href: '/heroes/iron-man', icon: Cpu },
     { label: 'TIMELINE', href: '/timeline', icon: Clock },
     { label: 'MOVIES', href: '/movies', icon: Film },
     { label: 'GALLERY', href: '/gallery', icon: ImageIcon },

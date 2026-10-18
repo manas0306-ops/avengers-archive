@@ -434,6 +434,53 @@ class LocalDatabase {
       recent_events: this.getRecentEvents()
     };
   }
+
+  // --- AUDIT LOGGING & SECURITY ---
+  public logAudit(action: 'CREATE' | 'UPDATE' | 'DELETE' | 'PUBLISH' | 'ARCHIVE', targetType: string, targetId: string, summary: string, actor: string = 'Director (Level 8)') {
+    const logEntry = {
+      id: `audit-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`,
+      timestamp: new Date().toISOString(),
+      action,
+      targetType,
+      targetId,
+      summary,
+      actor
+    };
+
+    if (!Array.isArray((this.state as any).auditLogs)) {
+      (this.state as any).auditLogs = [];
+    }
+    (this.state as any).auditLogs.unshift(logEntry);
+    this.saveToStorage();
+    return logEntry;
+  }
+
+  public getAuditLogs(): Array<{ id: string; timestamp: string; action: string; targetType: string; targetId: string; summary: string; actor: string }> {
+    return (this.state as any).auditLogs || [];
+  }
+
+  // --- DATA BACKUP & RESTORE ---
+  public exportDatabase(): string {
+    return JSON.stringify(this.state, null, 2);
+  }
+
+  public importDatabase(jsonString: string): { success: boolean; message: string } {
+    try {
+      const parsed = JSON.parse(jsonString);
+      if (!parsed || typeof parsed !== 'object') {
+        return { success: false, message: 'Invalid JSON payload structure.' };
+      }
+      this.state = {
+        ...this.getInitialState(),
+        ...parsed
+      };
+      this.saveToStorage();
+      this.logAudit('UPDATE', 'DATABASE', 'GLOBAL', 'Full database restore imported via Admin Console.');
+      return { success: true, message: 'Archive database imported successfully.' };
+    } catch (err: any) {
+      return { success: false, message: `Import error: ${err.message}` };
+    }
+  }
 }
 
 export const localDb = new LocalDatabase();
