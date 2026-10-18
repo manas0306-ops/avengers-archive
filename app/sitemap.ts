@@ -1,9 +1,12 @@
 import { MetadataRoute } from 'next';
 import { CHARACTERS } from '@/data/characters';
 import { MOVIES } from '@/data/movies';
+import heroesData from '@/data/heroes.json';
+import { Hero } from '@/types/hero';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://avengers-archive.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://manas0306-ops.github.io/avengers-archive';
+  const heroes = heroesData as unknown as Hero[];
 
   const staticPages = [
     '',
@@ -24,6 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
+  const heroDossierPages = heroes.map((hero) => ({
+    url: `${baseUrl}/heroes/${hero.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: hero.tier === 1 ? 0.95 : 0.85,
+  }));
+
   const characterPages = CHARACTERS.map((char) => ({
     url: `${baseUrl}/heroes?id=${char.id}`,
     lastModified: new Date(char.last_verified),
@@ -38,5 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...characterPages, ...moviePages];
+  return [...staticPages, ...heroDossierPages, ...characterPages, ...moviePages];
 }
+

@@ -8,9 +8,14 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178c6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ecf8e?style=flat&logo=supabase)](https://supabase.com/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live_Deployment-22c55e?style=flat&logo=githubpages&logoColor=white)](https://manas0306-ops.github.io/avengers-archive/)
 [![License](https://img.shields.io/badge/License-MIT-gold?style=flat)](LICENSE)
 
+> 🌐 **Live Production Deployment**: [https://manas0306-ops.github.io/avengers-archive/](https://manas0306-ops.github.io/avengers-archive/)  
+> Active Continuous Deployment under GitHub Actions & GitHub Pages. Every push to `master` triggers static site compilation and deployment.
+
 An interactive, production-grade digital museum, cinematic character encyclopedia, timeline matrix, tactical mission command, and verified research archive for the **Marvel Cinematic Universe (Earth-616)**.
+
 
 ---
 

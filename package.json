@@ -15,7 +15,8 @@
     "ingest:assets": "tsx scripts/ingest-assets.ts",
     "test:face-hover": "tsx scripts/test-face-hover.ts",
     "test:comics": "tsx scripts/test-comics-section.ts",
-    "test:tracking-portrait": "tsx scripts/test-tracking-portrait.ts"
+    "test:tracking-portrait": "tsx scripts/test-tracking-portrait.ts",
+    "verify:deploy": "node scripts/test-deploy.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.6",
