@@ -1,4 +1,4 @@
-# 🛡️ AVENGERS ARCHIVE
+# 🛡️ AVENGERS ARCHIVE: THE LIVING MCU DATABASE
 
 > **"Earth's Mightiest Heroes — Their Stories. Their Battles. Their Legacy."**  
 > *"Every Hero Has a Chapter."*
@@ -8,68 +8,115 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178c6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ecf8e?style=flat&logo=supabase)](https://supabase.com/)
+[![License](https://img.shields.io/badge/License-MIT-gold?style=flat)](LICENSE)
 
-An interactive, production-quality digital museum, cinematic character encyclopedia, timeline matrix, and tactical mission command for the **Marvel Cinematic Universe (Earth-616)**.
-
----
-
-## 🌟 Key Features
-
-### 1. 🦸‍♂️ Interactive Hero Dossiers
-- **Dynamic Horizontal Carousel**: Seamlessly swipe, drag, or navigate with keyboard arrows (`←` / `→`) and vertically-centered controls.
-- **8-Phase Interactive Storyline**: *Origin, The Call, Rise of the Avenger, Greatest Battles, Losses, Turning Point, Legacy, and Where Are They Now?*
-- **Canonical Character Badges**: Verified statuses (`ACTIVE`, `RETIRED`, `FALLEN`, `UNKNOWN`, `LEGACY`, `AFFILIATED HERO`) and categorization (*Core Avengers, Successors, Allies, Multiverse*).
-- **Abilities & Equipment**: Comprehensive breakdowns of powers, signature weapons, affiliations, and relationships.
-
-### 2. ⏳ Master MCU Timeline Matrix
-- Chronological timeline tracking pivotal Earth-616 events from **1943 Project Rebirth** through **The Battle of New York**, **Sokovia**, **Civil War**, **Infinity War**, **The Blip**, and **Endgame**, to the modern **Multiverse Fractures**.
-- Filterable by **MCU Phase (1–6)** and event categories (*Foundation, Battle, Crisis, Multiverse*).
-- Click any event to open a cinematic dossier modal detailing what happened, figures involved, and long-term repercussions.
-
-### 3. 🎬 Avengers Movie Archive
-- Dual **Watch Order Modes**: Toggle between **Release Order** and **Chronological In-Universe Order**.
-- Detailed stats: Box office revenue, Rotten Tomatoes scores, directors, runtimes, synopses, and impact on the Avengers.
-- **Spoiler Protection Protocol**: Global toggle in the navigation bar blurs sensitive plot outcomes until explicitly revealed.
-
-### 4. 📸 Photo Vault & 4K Wallpapers
-- Filterable visual archive (*Heroes, Team, Battles, Posters, Wallpapers*).
-- Fullscreen interactive lightbox with zoom, keyboard navigation, and license/source attribution.
-- Dedicated **Wallpapers Section** with aspect ratio filters (*Desktop 16:9, Mobile 9:16, Ultrawide 21:9*).
-
-### 5. 🎯 Tactical Mission Composer ("Build Your Avengers")
-- Assemble a custom 7-hero strike squad across defined roles: **Leader, Heavy, Tech, Mystic, Ranged, Tactical, Support**.
-- Real-time tactical combat synergy analysis (e.g. *Iron Man + Doctor Strange Tech-Mystic amplification*).
-- Persistent squad saving and shareable links.
-
-### 6. 🧠 Trivia Challenges & Mini-Games
-- **"How Much Do You Know?"**: Interactive 4-choice trivia quizzes with animated answer validation and explanatory debriefs.
-- **Hero Recognition Match**: Smooth card-matching memory mini-game with move counter, stopwatch, and high score tracking.
-
-### 7. 🕵️‍♂️ Privacy-Respecting Visitor Tracking & Admin Console
-- **Zero Raw IP Storage**: Privacy-preserving one-way hashing for anonymous session identification (*"Anonymous Visitor #042"*).
-- **Admin Dashboard (`/admin`)**:
-  - Live **"Currently in the Archive"** ticker showing active visitors.
-  - Real database activity stream (*"Someone just opened Thor's archive"*).
-  - Visitor management table with search, deletion, and automatic 90-day retention purge.
-  - Complete **Content Management (CRUD)**: Create, edit, and delete hero dossiers without code changes.
-
-### 8. ⚡ Easter Eggs & Audio Engine
-- **J.A.R.V.I.S. Mode**: Click the Arc Reactor 3 times to summon the Stark AI assistant HUD.
-- **Infinity Gauntlet Blip**: Click the "DO NOT SNAP" button to trigger a cosmic particle dust effect on 50% of the UI before restoring reality.
-- **Zero-Dependency Web Audio Synth**: Custom synthesized sound effects (Arc hum, Stark HUD blips, gauntlet snaps) with audio toggle.
+An interactive, production-grade digital museum, cinematic character encyclopedia, timeline matrix, tactical mission command, and verified research archive for the **Marvel Cinematic Universe (Earth-616)**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Key Upgrades & Flagship Features
 
-- **Frontend**: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS, Lucide Icons, Canvas Confetti
-- **Audio**: Web Audio API (native browser synthesis, 0 external audio MP3 assets needed)
-- **Database**: PostgreSQL (Supabase schema provided) + Built-in Local Persistence Engine
-- **Deployment**: Vercel & Supabase compatible
+### 1. 🦾 The Tony Stark Workshop & Mark I–LXXXV Armor Archive
+A dedicated, premium Stark Industries technical workshop HUD (`/heroes/iron-man` and `/heroes?view=stark`):
+- **Complete Mark I through Mark LXXXV Armor Bay**: Fully cataloged dataset of all 85 Iron Man suits built by Tony Stark.
+  - Canonical designation, nickname, category (*Prototype, Standard, Specialized, Heavy Duty, Stealth, Space, Modular, Nanotech, Quantum*), first appearance, and battle history.
+  - Engineering specifications: metallurgy (e.g., gold-titanium alloy, liquid nanoparticle memory weave), flight ceiling, propulsion telemetry, reactor output, and weapons complement.
+  - Transparent Canon Disclosures: Explicit `EDITORIAL_UNKNOWN_FIELDS` flags disclosing unconfirmed intermediate specs for off-screen suits built during the 5-year Blip gap.
+- **Interactive Armor Inspection HUD**: High-fidelity technical modal with interactive tabs for *Overview, Combat Systems, Propulsion & Defense, Metallurgy & Energy, and Canon & Sources*.
+- **Side-by-Side Armor Comparison Matrix**: Compare 2 to 4 Mark armors simultaneously across dimensions, power output, weapon configurations, and story milestones.
+- **Stark Inventions & Technologies Archive**: Searchable ledger of 10 signature Tony Stark breakthroughs (Arc Reactor, Synthetic Element Badassium, J.A.R.V.I.S., F.R.I.D.A.Y., E.D.I.T.H., B.A.R.F., Quantum Temporal GPS, Nano Gauntlet, Spider-Man Stark suits, and Iron Legion).
+- **Dual-Chronology Stark Timeline**: Toggle dynamically between **In-Universe Story Order** (1970–2023) and **Real-World Film Release Order** (2008–2019).
+- **Cinematic F.R.I.D.A.Y. Boot Sequence**: Diamond-shaped HUD reticle, Arc Reactor pulse audio, and diagnostic status boot with an immediate "Skip Sequence" toggle and full `prefers-reduced-motion` compliance.
 
 ---
 
-## 🚀 Quick Start & Local Setup
+### 2. 🦸 Universal Hero Dossier System (`/heroes/[slug]`)
+Statically pre-rendered (`SSG`) dossiers for all 40 MCU characters across founding Avengers, successors, and allies:
+- **8-Chapter Interactive Storyline**:
+  1. *Origin & Awakening*
+  2. *The Call to Action*
+  3. *Rise of the Hero*
+  4. *Greatest Battles & Victories*
+  5. *Losses, Sacrifices & Consequences*
+  6. *The Critical Turning Point*
+  7. *Legacy, Alliances & Protégés*
+  8. *Latest Released Appearance & Current Canon Status*
+- **Inherent Abilities vs. Equipment Breakdown**: Clear separation between genetic/cosmic biology (e.g., Asgardian physiology, Super Soldier enhancement, mutant energy manipulation) and external hardware (e.g., web-shooters, composite suits, tactical quivers).
+- **Specialized Lore & Hardware Modules**:
+  - **Captain America**: Circular Vibranium shield metallurgy, kinetic absorption dynamics, and leadership doctrine.
+  - **Thor**: Uru hammer Mjolnir worthiness enchantments, Stormbreaker bifrost conduit, and lightning channeling.
+  - **Hulk**: Gamma radiation cellular transformation, adrenaline-scaled kinetic output, and the Smart Hulk integration.
+  - **Black Widow**: 300,000-volt Widow's Bite electroshock gauntlets, Red Room tactical conditioning, and covert espionage tools.
+  - **Hawkeye**: Specialized quiver arrowheads (thermite, sonic, EMP, grappling, Pym particle, explosive).
+  - **Spider-Man**: Web fluid polymer shear strength, web-shooter PSI pressure, and Spider-Sense spatial awareness.
+  - **Doctor Strange**: Sling Ring spatial mechanics, Eye of Agamotto temporal relics, and Cloak of Levitation sentience.
+  - **Scarlet Witch**: Chaos Magic probability warping, Darkhold corruption, and hex-boundary reality casting.
+  - **Vision**: Vibranium-synthezoid cellular density phasing, Solar Gem energy projection, and synthetic consciousness.
+  - **Sam Wilson**: EX-41 Falcon flight pack, Redwing reconnaissance drone, and Vibranium Captain America suit.
+  - **Black Panther**: Vibranium micro-weave kinetic shock absorption and panther habit energy redistribution.
+- **Typed Relationship Network**: Interactive relationship nodes classified into *Family, Teammates, Mentors/Students, Allies, Rivals/Antagonists, and Successors*.
+- **Calculated Appearance & Last-Seen Engine**:
+  - Dynamically calculates first appearance, total confirmed appearances, and most recent verified appearance from structured film/television records.
+  - Distinguishes on-screen starring roles from cameos, voice roles, archival footage, and alternate-universe variants.
+  - Displays confirmed future appearances as strictly "Upcoming" without speculative plot details.
+- **Verification Sources & Transparency**: Official Marvel, Disney+, and reference source links with verification timestamps and continuity classification (*Earth-616 Official Canon* vs *Multiverse Variant*).
+
+---
+
+### 3. 🔍 Global Search Matrix
+- Accessible anywhere via `Ctrl + K` (or `Cmd + K`) or the navigation bar search button.
+- Instant, multi-dimensional search across:
+  - **40 Heroes**: By alias, real name, status, or power description.
+  - **85 Iron Man Armors**: By Mark number (1–85), roman numerals (I–LXXXV), nickname, or combat role.
+  - **Stark Inventions**: By technology name, inventor, or core capability.
+  - **MCU Movies**: By title, phase, or release order.
+  - **Timeline Events**: By battle, crisis, or historical milestone.
+  - **Relationships**: Find characters connected to any Avenger.
+- Full keyboard navigation (`↑` / `↓` arrows, `Enter` to select, `Esc` to dismiss).
+
+---
+
+### 4. 🔒 Hardened Director Security & Admin Governance (`/admin`)
+- **Server-Side Token Authentication**: Insecure client-side hardcoded passcodes have been eliminated. Authentication is handled by a secure Next.js API route (`/api/admin/auth`) using timing-safe comparison, cryptographically signed tokens, and HTTP-only cookies.
+- **Audit Logging System**: Every administrative action (hero edits, additions, deletions, backups, purges) is automatically logged with timestamp, administrator moniker, and mutation details.
+- **Database Backup & Restoration**: Export the entire database state (heroes, favorites, squads, visitor analytics, audit logs) to an encrypted JSON backup file, with schema validation for one-click restoration.
+- **Supabase PostgreSQL Schema with RLS**: Complete PostgreSQL schema (`supabase/schema.sql`) with Row Level Security (RLS) policies protecting all 12 tables:
+  - Public anonymous read access for canonical catalogs (characters, armors, inventions, movies, timeline).
+  - Restricted service-role policies for administrative audit logs and content mutations.
+
+---
+
+### 5. ⏳ Master MCU Timeline & Movie Vault
+- **Chronological Master Timeline**: Tracks Earth-616 from 1943 Project Rebirth through the Battle of New York, Sokovia, Civil War, Infinity War, the Blip, Endgame, and the Multiverse Saga.
+- **Dual Movie Watch Order**: Toggle seamlessly between **Film Release Order** (2008–Present) and **Chronological In-Universe Order**.
+- **Global Spoiler Protocol**: Universal header toggle blurs sensitive plot resolutions and death consequences across all modules.
+
+---
+
+### 6. 🎮 Interactive Museum Experiences
+- **Tactical Squad Builder ("Assemble Your Avengers")**: Assemble a 7-hero strike squad with role balancing (*Leader, Heavy, Tech, Mystic, Ranged, Tactical, Support*) and real-time synergy calculation.
+- **MCU Trivia Terminal**: 4-choice interactive challenges with animated score multipliers and lore explanations.
+- **Memory Card Match**: Rapid-recall hero emblem matching mini-game with stopwatch and high score storage.
+- **Photo Vault & Wallpapers**: High-resolution gallery with aspect ratio filters (*Desktop 16:9, Mobile 9:16, Ultrawide 21:9*) and verified usage licensing.
+- **Stark Web Audio Synthesizer**: Native zero-dependency browser Web Audio API generating authentic Arc Reactor hums, HUD diagnostic blips, and cosmic gauntlet snaps.
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Framework** | Next.js 14.2 (App Router, Server Components + Static Site Generation) |
+| **Language** | TypeScript 5.6 (Strict Mode, Zero `any` policy for core data) |
+| **Styling & Motion** | Tailwind CSS 3.4, Framer Motion 11, GSAP 3.15, Lucide Icons |
+| **Validation** | Zod 4.6 (Runtime schema validation for hero catalogs and imports) |
+| **Audio Synthesis** | Native Web Audio API (Zero external MP3 bandwidth required) |
+| **Database & Auth** | Supabase PostgreSQL with Row Level Security (RLS) + Local Persistence Engine Fallback |
+| **Special Effects** | HTML5 Canvas Confetti, CSS Scanline Overlays, SVG Reticle HUDs |
+
+---
+
+## 🚀 Getting Started
 
 ### 1. Prerequisites
 - **Node.js**: v18.17+ or v20+
@@ -82,13 +129,24 @@ cd avengers-archive
 npm install
 ```
 
-### 3. Environment Variables (Optional)
+### 3. Environment Setup (Optional)
 Copy `.env.example` to `.env.local`:
 ```bash
 cp .env.example .env.local
 ```
+Configure your credentials:
+```env
+# Supabase Configuration (Optional - falls back seamlessly to Local Storage persistence)
+NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
-> **Note**: The application includes a **complete built-in local persistence engine**. If Supabase keys are not set, 100% of all features (visitor tracking, live activity feed, favorites, team builder, admin dashboard, quiz attempts) persist and run seamlessly in local storage!
+# Director Admin Security
+ADMIN_SECRET_KEY=your-secure-director-token
+STARK_DIRECTOR_KEY=stark
+```
+
+> **Zero-Configuration Fallback**: If Supabase credentials are not provided, the application automatically activates its **built-in local persistence engine**. All features—visitor analytics, squad saving, favorites, quiz scoring, audit logs, and admin mutations—function 100% locally out of the box!
 
 ### 4. Run Development Server
 ```bash
@@ -98,29 +156,60 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🗄️ Supabase Database Setup
+## 🧪 Verification & Quality Assurance Suite
 
-When deploying to Supabase:
-1. Create a new project at [supabase.com](https://supabase.com).
-2. Navigate to the **SQL Editor**.
-3. Copy and run the contents of [`supabase/schema.sql`](supabase/schema.sql).
-4. Add your project URL and Anon key to `.env.local`:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-   ```
+Run the comprehensive test and verification suite:
+
+```bash
+# Validate all 40 heroes against strict Zod schema
+npm run validate:heroes
+
+# Verify 880/880 disk assets against strict byte budgets
+npm run verify:assets
+
+# Test facial mask/unmasked pixel-alignment (1200x1500)
+npm run check:alignment
+
+# Run ESLint code quality checks
+npm run lint
+
+# Run TypeScript strict type verification
+npx tsc --noEmit
+
+# Test production static build (59 SSG pages)
+npm run build
+```
 
 ---
 
-## 🔐 Admin Console Access
+## 🗄️ Database Architecture (Supabase PostgreSQL)
 
-To access the Director Console:
-1. Navigate to `/admin` or click the settings cog in the navbar.
-2. Enter the clearance passcode: `stark` (or `admin123`).
-3. You now have access to live visitor metrics, real-time activity streams, and dynamic hero CRUD tools.
+The database schema is defined in [`supabase/schema.sql`](supabase/schema.sql) and encompasses 12 production tables:
+1. `characters`: Hero identities, powers, stories, images, and source citations.
+2. `movies`: Film catalog, phases, box office, directors, and storyline impacts.
+3. `timeline_events`: In-universe chronological timeline records.
+4. `gallery_items`: High-resolution photo vault and wallpaper assets.
+5. `visitor_sessions`: Privacy-preserving hashed session tracking.
+6. `visitor_events`: Real-time anonymous activity ticker events.
+7. `favorites`: User-saved heroes, movies, and gallery items.
+8. `saved_squads`: Tactical strike squad configurations.
+9. `trivia_questions`: Canon-verified quiz bank.
+10. `trivia_attempts`: Quiz leaderboard and attempt logs.
+11. `stark_armors`: Complete Mark I through LXXXV suit engineering registry.
+12. `stark_inventions`: Tony Stark technologies and collaborative patents.
+13. `admin_audit_logs`: Cryptographic director activity compliance logs.
 
 ---
 
-## 📜 Canonical Sourcing & Legal Notice
+## 📜 Canon Integrity & Continuity Policy
 
-This is an educational, non-commercial fan-made project created under fair use principles. All character likenesses, marks, and names are intellectual property of **Marvel Characters, Inc.** and **The Walt Disney Company**.
+- **Primary Canon**: The Marvel Cinematic Universe main continuity (**Earth-616**).
+- **Multiverse Distinctions**: Alternate variants (e.g., Earth-838 Illuminati, Void variants) are stored with distinct continuity designations and are never conflated with prime timeline identities.
+- **Upcoming Productions**: Confirmed future projects (such as *Avengers: Doomsday* and *Avengers: Secret Wars*) remain strictly labeled as **Upcoming** without speculative plot details or manufactured appearances.
+- **Source Transparency**: Every canonical fact is corroborated by released on-screen dialogue, visual credits, or official Marvel/Disney publications. Unconfirmed specifications are explicitly flagged as `CANONICAL_INTERMEDIATE` or `UNKNOWN`.
+
+---
+
+## ⚖️ Legal Notice
+
+This project is an educational, non-commercial research archive and digital museum created under fair use principles. Character names, likenesses, emblems, and associated indicia are intellectual property of **Marvel Characters, Inc.** and **The Walt Disney Company**.
